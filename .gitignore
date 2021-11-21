@@ -1,3 +1,8 @@
+# Keys
+*.crt
+*.key
+
+# Svelte
 .idea
 .DS_Store
 .nyc_output
