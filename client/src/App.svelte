@@ -5,7 +5,7 @@
 	let age: number = 21;
 	let title: string = "Janitor";
 	let description: string = "A cleaning man";
-	let image: string = "https://static.skillshare.com/cdn-cgi/image/quality=80,width=1000,format=auto/uploads/project/4c49440fec9b45c5464596033e0a23d7/ad168d89"
+	let image: string = ""
 
 	// Svelte version of "labeled statements"
 	// $: updates the page whenever the variable specified changes

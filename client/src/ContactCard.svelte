@@ -7,8 +7,10 @@
 
 <div class="contact-card">
     <header>
-        <div class="thumb">
-        <img src="{userImage}" alt="" />
+        <!-- Option one of conditionally rendering css using terniary operator -->
+        <!-- <div class="{userImage ? 'thumb': 'thumb thumb-placeholder'}"> -->
+        <div class="thumb" class:thumb-placeholder="{!userImage}">
+            <img src="{userImage}" alt="" />
         </div>
         <div class="user-data">
         <h1>{userName}</h1>
@@ -38,6 +40,10 @@
     .thumb {
         width: 33%;
         height: 100%;
+    }
+
+    .thumb-placeholder {
+        background: rgb(134, 13, 13);
     }
 
     img {
