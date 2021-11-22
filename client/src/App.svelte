@@ -3,7 +3,15 @@
 	let age: number = 21;
 
 	// Svelte version of "labeled statements"
+	// $: updates the page whenever the variable specified changes
 	$: uppercaseName = name.toUpperCase();
+
+	$: console.log(name);
+
+	$: if (name === 'Not Johnny') {
+		console.log('It runs');
+		age = 12
+	}
 
 	function incrementAge():void {
 		age += 1
