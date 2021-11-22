@@ -45,7 +45,12 @@
 	<button on:click={incrementAge}> Change Age </button>
 	<button on:click={changeName}> Change Name</button>
 
-	<ContactCard userName={name} jobTitle={title} description={description} userImage={image}/>
+	<!-- Destructuring only works when variable name and input are the same -->
+	<ContactCard 
+	userName={name} 
+	jobTitle={title} 
+	{description} 
+	userImage={image}/>
 </main>
 
 <style lang="scss">
